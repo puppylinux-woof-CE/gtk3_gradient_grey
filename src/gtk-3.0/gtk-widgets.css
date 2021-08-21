@@ -68,22 +68,20 @@ button.flat {
 }
 button:not(.flat),
 .button {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 	padding: .35em;
 }
-button:not(.flat):hover, .button:not(.flat):hover {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
+button:hover, .button:hover {
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 button:active, .button:active,
 button:active:hover, .button:active:hover,
 button.toggle:checked,
 button.toggle:active:hover,
 stackswitcher button:checked {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
 }
 button:focus, .button:focus {
 	background-color: @theme_selected_bg_color;
@@ -111,10 +109,9 @@ button.toggle:checked:disabled  {
 /**************
  * scrollbars *
  **************/
-scrollbar button {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
+scrollbar.vertical button {
+	background-image: linear-gradient(to bottom, white 40%, #a4a7a4);
+	border: 1px solid #a4a7a4;
 	padding: .35em;
 }
 scrollbar button:hover,
@@ -125,12 +122,11 @@ scrollbar button:active:hover {
 }
 scrollbar button:disabled {
 	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
-	border: 1px solid #A4A7A4;
+	border: 1px solid #a4a7a4;
 }
 scrollbar slider {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
-	border-radius: 3px;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 scrollbar.vertical slider {
 	min-height: .5rem;
@@ -274,21 +270,19 @@ menubar > menuitem {
 	margin: 0;
 	padding: .3em .4em;
 	border: 1px solid transparent;
-	border-radius: 3px;
 }
 menubar > menuitem:hover {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 }
 menuitem {
 	margin: 1px;
 	padding: 3px;
 	border: 1px solid transparent;
-	border-radius: 3px;
 }
 menuitem:hover {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 }
 menu separator {
 	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
@@ -350,41 +344,17 @@ notebook header.right tabs {
 }
 notebook tab,
 notebook.frame > .frame {
-	background: shade(@theme_bg_color, .9);
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
 	padding: .3em .4em;
 }
-notebook header.top tab,
-notebook.frame > .frame.top {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
-	padding: 5px;
-}
-notebook header.bottom tab,
-notebook.frame > .frame.bottom {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
-	padding: 5px;
-}
-notebook header.left tab,
-notebook.frame > .frame.left {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
-	padding: 5px;
-}
-notebook header.right tab,
-notebook.frame > .frame.right {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
+notebook header tab {
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 	padding: 5px;
 }
 notebook header tab:checked,
 notebook.frame > .frame:active {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
 }
 notebook header.top tab:checked {
 	margin-top: -2px;
@@ -425,9 +395,8 @@ expander arrow:checked {
  * CSD header and window border *
  ********************************/
 headerbar {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 	padding: 7px;
 }
 decoration {
@@ -471,13 +440,8 @@ toolbar separator {
 }
 toolbar button {
 	background: none;
-	border: 1px solid transparent;
-	border-radius: 3px;
 	padding: .35em;
-}
-toolbar button:hover {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
+	margin: 1px 0 1px 0;
 }
 toolbar button:disabled {
 	background: none;
@@ -516,9 +480,8 @@ list row {
 	border: 1px solid transparent;
 }
 list row:hover {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
-	border-radius: 3px;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 
 /**************
@@ -582,9 +545,8 @@ scale trough,
 treeview.view.trough,
 treeview.view.trough:selected,
 scrollbar {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 }
 
 /*********
@@ -594,9 +556,8 @@ scale {
 	margin: 1px;
 }
 scale slider {
-	background-color: @theme_selected_bg_color;
-	border-radius: 3px;
-	border: 1px solid black;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 scale slider:disabled,
 scale trough:disabled {
@@ -660,9 +621,8 @@ progressbar trough {
 }
 progressbar progress,
 treeview.view.progressbar {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
-	border-radius: 3px;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 	margin-top: 1px;
 	margin-bottom: 1px;
 }
@@ -688,33 +648,24 @@ levelbar block {
 	padding: 3px;
 }
 levelbar block.filled {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
-	border-radius: 3px;
-	margin: 1px;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 
 /**********
  * switch *
  **********/
 switch {
-	background-color: shade(@theme_bg_color, .9);
-	border-image: url("assets/button-pressed.png") 3 / 3px stretch;
-	min-height: 2em;
-	border: 1px solid transparent;
-	border-radius: 3px;
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 }
 switch slider {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
-	border-radius: 3px;
-	margin: 2px;
-	padding: .3em;
+	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	border: 1px solid #a4a7a4;
 }
 switch:checked {
-	background: @theme_selected_bg_color;
-	color: @theme_selected_fg_color;
-	border: 1px solid black;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 
 /************
