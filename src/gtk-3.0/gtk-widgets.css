@@ -31,9 +31,6 @@
 	text-shadow: 1px 1px @theme_base_color;
 	-gtk-icon-effect: dim;
 }
-.flat:not(button):not(:hover):not(:checked) {
-	border: 0;
-}
 
 /*************
  * selection *
@@ -82,14 +79,15 @@ button.toggle:checked,
 button.toggle:active:hover,
 stackswitcher button:checked {
 	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 button:focus, .button:focus {
 	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
+	border: 1px solid #a4a7a4;
 }
 button:disabled, .button:disabled {
 	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
-	border: 1px solid #A4A7A4;
+	border: 1px solid #a4a7a4;
 }
 button.link {
 	color: @link_color;
@@ -103,7 +101,7 @@ button.color * {
 	min-height: 1.2em;
 }
 button.toggle:checked:disabled  {
-	border: 1px solid #A4A7A4;
+	border: 1px solid #a4a7a4;
 }
 
 /**************
@@ -117,8 +115,8 @@ scrollbar.vertical button {
 scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover {
-	background-color: @theme_selected_bg_color;
-	border: 1px solid black;
+	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
+	border: 1px solid #a4a7a4;
 }
 scrollbar button:disabled {
 	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
@@ -562,7 +560,7 @@ scale slider {
 scale slider:disabled,
 scale trough:disabled {
 	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
-	border: 1px solid #A4A7A4;
+	border: 1px solid #a4a7a4;
 }
 scale.horizontal trough {
 	padding: 0 1.2em;
