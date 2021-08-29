@@ -393,13 +393,12 @@ expander arrow:checked {
  * CSD header and window border *
  ********************************/
 headerbar {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
-	border: 1px solid #a4a7a4;
+	background-image: linear-gradient(to bottom, white, #c4c4c4);
 	padding: 7px;
 }
 decoration {
 	background-color: #D2D4D2;
-	border: 1px solid #989B98;
+	border: 1px solid #4A5966;
 }
 
 /****************************
