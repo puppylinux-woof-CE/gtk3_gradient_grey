@@ -667,7 +667,12 @@ switch {
 }
 switch slider {
 	background-image: linear-gradient(to bottom, white 10%, #acabac);
-	border: 1px solid #a4a7a4;
+	border-style: solid;
+	border-color: #a4a7a4;
+	border-width: 0 1px 0 0;
+}
+switch:checked slider {
+	border-width: 0 0 0 1px;
 }
 switch:checked {
 	background-image: linear-gradient(to bottom, #f7f7f7, #7f7f7f);
