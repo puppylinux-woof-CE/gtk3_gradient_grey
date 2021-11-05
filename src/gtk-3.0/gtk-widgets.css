@@ -67,7 +67,7 @@ button.flat {
 }
 button:not(.flat),
 .button {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border: 1px solid #a4a7a4;
 	padding: .35em;
 }
@@ -274,7 +274,7 @@ menubar > menuitem {
 	border: 1px solid transparent;
 }
 menubar > menuitem:hover {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border: 1px solid #a4a7a4;
 }
 menuitem {
@@ -283,7 +283,7 @@ menuitem {
 	border: 1px solid transparent;
 }
 menuitem:hover {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border: 1px solid #a4a7a4;
 }
 menu separator {
@@ -344,11 +344,11 @@ notebook header.right tabs {
 }
 notebook tab,
 notebook.frame > .frame {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	padding: .3em .4em;
 }
 notebook header tab {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border: 1px solid #a4a7a4;
 	padding: 5px;
 }
@@ -430,7 +430,7 @@ modelbutton.flat {
 }
 
 modelbutton.flat:hover {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border: 1px solid #a4a7a4;
 }
 
@@ -564,7 +564,7 @@ scale trough,
 treeview.view.trough,
 treeview.view.trough:selected,
 scrollbar {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border: 1px solid #a4a7a4;
 }
 
@@ -675,11 +675,11 @@ levelbar block.filled {
  * switch *
  **********/
 switch {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border: 1px solid #a4a7a4;
 }
 switch slider {
-	background-image: linear-gradient(to bottom, white 10%, #acabac);
+	background-image: linear-gradient(to bottom, white 20%, #acabac);
 	border-style: solid;
 	border-color: #a4a7a4;
 	border-width: 0 1px 0 0;
