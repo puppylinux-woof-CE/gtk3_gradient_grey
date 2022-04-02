@@ -396,7 +396,7 @@ expander arrow:checked {
  ********************************/
 headerbar {
 	background-image: linear-gradient(to bottom, white, #c4c4c4);
-	padding: 7px;
+	padding: 3px;
 }
 decoration {
 	background-color: #D2D4D2;
