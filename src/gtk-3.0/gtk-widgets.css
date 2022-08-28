@@ -243,13 +243,12 @@ spinbutton button {
 combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
-	margin: -.1em;
-	min-height: 1em;
-	min-width: 1em;
+	margin: -2px;
 }
 combobox button:first-child arrow {
 	border-image: url("assets/combobox-arrow-separator.png") 2 / 2px stretch;
-	padding-left: .5em;
+	padding: 3px;
+	padding-left: 5px;
 }
 
 /*********
@@ -296,15 +295,22 @@ menu separator {
 	min-height: 1px;
 	margin: .2em .4em;
 }
-menuitem > arrow,
 menuitem > image {
 	min-height: 1em;
 	min-width: 1em;
 }
 menuitem > arrow {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin: -.2em 0 -.2em 1em;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+menu arrow.top,
+.menu arrow.top {
+	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+}
+menu arrow.bottom,
+.menu arrow.bottom {
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 /*************
@@ -408,12 +414,18 @@ notebook.frame > .frame {
 	padding: .15rem;
 }
 
+/**********
+ * Arrows *
+ **********/
+arrow {
+	min-width: 1.2rem;
+	min-height: 1.2rem;
+}
+
 /************
  * expander *
  ************/
 expander arrow {
-	min-width: 16px;
-	min-height: 16px;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 expander arrow:checked {
@@ -802,6 +814,14 @@ calendar.highlight {
 	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
 }
 
+/**************
+ * actionbars *
+ **************/
+actionbar {
+	border-top: solid 1px shade(@theme_bg_color, .8);
+	padding: 7px;
+}
+
 /***********
  * sidebar *
  ***********/
@@ -835,9 +855,6 @@ dialog filechooser placessidebar button {
 }
 dialog filechooser placessidebar.sidebar viewport {
 	border: none;
-}
-dialog filechooser placessidebar .active {
-	background-color: red;
 }
 dialog filechooser placessidebar *:hover button {
 	background-color: transparent;
