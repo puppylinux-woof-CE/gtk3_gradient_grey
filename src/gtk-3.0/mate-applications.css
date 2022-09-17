@@ -65,6 +65,9 @@
 .caja-navigation-window statusbar frame {
 	border: 0;
 }
+#caja-extra-view-widget button.flat {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
 
 /*********
  * Pluma *
@@ -75,6 +78,16 @@
 }
 .pluma-window statusbar > *:last-child {
 	padding-right: 5px;
+}
+
+/*********
+ * Marco *
+ *********/
+/* this may cause problems in the future, but there are no selectors
+ * in the alt+tab dialogue... */
+window > frame > box > grid image:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color
 }
 
 /**************
